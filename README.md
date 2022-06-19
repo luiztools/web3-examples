@@ -13,4 +13,7 @@ BSC Scan website clone using BSC Scan APIs.
 ## CryptoBubbles Clone
 CryptoBubbles website clone using Binance streams.
 
+## TradingView Clone
+TradingView candle chart clone using Binance API & Stream.
+
 Use the respective readmes to run the projects.
