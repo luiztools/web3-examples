@@ -16,4 +16,7 @@ CryptoBubbles website clone using Binance streams.
 ## TradingView Clone
 TradingView candle chart clone using Binance API & Stream.
 
+## Hello Solidity
+A first Solidity project.
+
 Use the respective readmes to run the projects.
