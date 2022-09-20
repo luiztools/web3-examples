@@ -17,6 +17,9 @@ CryptoBubbles website clone using Binance streams.
 TradingView candle chart clone using Binance API & Stream.
 
 ## Hello Solidity
-A first Solidity project.
+A first Solidity project (Truffle).
+
+## CRUD Solidity
+A CRUD example in Solidity (Truffle).
 
 Use the respective readmes to run the projects.

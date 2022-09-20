@@ -1,5 +1,5 @@
-# hello-solidity
-A Hello world example in Solidity.
+# crud-solidity
+A CRUD example in Solidity with Truffle.
 
 ## Pre-requisites
 
@@ -9,14 +9,14 @@ A Hello world example in Solidity.
 ## How to Run
 
 1. open command line terminal
-2. cd hello-solidity
+2. cd crud-solidity
 3. npm install
 4. sudo truffle compile
 5. sudo truffle test
 
 ## Mais Informações
 
-Leia o tutorial em (inclui vídeo): https://www.luiztools.com.br/post/como-criar-seu-primeiro-smart-contract-em-solidity-com-remix/
+Leia o tutorial em (inclui vídeo): https://www.luiztools.com.br/post/como-criar-seu-primeiro-smart-contract-em-solidity-com-truffle/
 
 Conheça meu curso de bot para criptomoedas: https://www.luiztools.com.br/curso-beholder
 
