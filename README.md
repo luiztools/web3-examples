@@ -22,4 +22,10 @@ A first Solidity project (Truffle).
 ## CRUD Solidity
 A CRUD example in Solidity (Truffle).
 
+## Alexa Skill
+Example of Amazon Alexa skill for crypto prices.
+
+## Blockchain
+Example of blockchain written in JavaScript (teaching purposes).
+
 Use the respective readmes to run the projects.
