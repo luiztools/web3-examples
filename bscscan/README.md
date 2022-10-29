@@ -11,6 +11,8 @@ A prototype of BSC Scan clone website using the BSC Scan official APIs.
 
 Tutorial completo (inclui vídeo) em https://www.luiztools.com.br/post/como-criar-um-bsc-scan-clone-com-reactjs/
 
+Conheça meu curso de web3, blockchain e solidity: https://www.luiztools.com.br/curso-web23
+
 Me siga nas redes sociais: https://about.me/luiztools
 
 Receba novidades no Telegram: https://t.me/luiznews

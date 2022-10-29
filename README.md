@@ -16,11 +16,17 @@ CryptoBubbles website clone using Binance streams.
 ## TradingView Clone
 TradingView candle chart clone using Binance API & Stream.
 
-## Hello Solidity
+## Hello Solidity Truffle
 A first Solidity project (Truffle).
 
-## CRUD Solidity
+## Hello Solidity HardHat
+A first Solidity project (HardHat).
+
+## CRUD Solidity Truffle
 A CRUD example in Solidity (Truffle).
+
+## CRUD Solidity HardHat
+A CRUD example in Solidity (HardHat).
 
 ## Alexa Skill
 Example of Amazon Alexa skill for crypto prices.
