@@ -20,8 +20,11 @@ A CRUD example in Solidity (Truffle).
 ## CryptoBubbles Clone
 CryptoBubbles website clone using Binance streams.
 
-## Dapp React
-Frontend example (built with ReactJS) for smart contracts.
+## Dapp React Ethers
+Frontend example (built with ReactJS + EthersJS) for smart contracts.
+
+## Dapp React Web3
+Frontend example (built with ReactJS + web3.js) for smart contracts.
 
 ## Hello Solidity HardHat
 A first Solidity project (HardHat).

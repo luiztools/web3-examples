@@ -1,6 +1,6 @@
-# dapp-react
+# dapp-react-web3
 
-A simple web frontend written with JS/React to integrate with a smart contract in the blockchain (BSC Testnet).
+A simple web frontend written with JS/React to integrate with a smart contract in the blockchain (BSC Testnet) using web3.js.
 
 Smart Contract address: https://testnet.bscscan.com/address/0xE9956c971B72aD74F249E616828df613F03E858b
 
@@ -11,7 +11,7 @@ Smart Contract address: https://testnet.bscscan.com/address/0xE9956c971B72aD74F2
 
 ## Referências
 
-Tutorial em (inclui vídeo): https://www.luiztools.com.br/post/como-criar-um-frontend-web-para-smart-contract-com-reactjs/
+Tutorial em: https://www.luiztools.com.br/post/como-criar-um-frontend-para-smart-contract-com-reactjs-web3/
 
 Conheça meu curso de web3, blockchain e solidity: https://www.luiztools.com.br/curso-web23
 
