@@ -33,10 +33,13 @@ A first Solidity project (HardHat).
 A first Solidity project (Truffle).
 
 ## MetaMask Login
-Example of login page using MetaMask as auth.
+Example of login page using MetaMask as auth (EthersJS).
 
 ## MetaMask Transfer
-Example of crypto transfer from MetaMask wallet.
+Example of crypto transfer from MetaMask wallet (EthersJS).
+
+## MetaMask Web3
+Example of blockchain calls & sends using MetaMask and web3.js
 
 ## Token ERC-20 Remix
 New ERC-20 Token built with Remix and Solidity.

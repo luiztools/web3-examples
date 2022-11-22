@@ -1,4 +1,4 @@
-#BSC Scan Clone
+# BSC Scan Clone
 
 A prototype of BSC Scan clone website using the BSC Scan official APIs.
 

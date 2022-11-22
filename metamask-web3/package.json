@@ -1,0 +1,17 @@
+{
+  "name": "metamask-web3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^2.1.1",
+    "dotenv": "^16.0.3",
+    "web3": "^1.8.1"
+  }
+}
