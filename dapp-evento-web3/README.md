@@ -11,7 +11,7 @@ Smart Contract address (ERC-20 example token): https://testnet.bscscan.com/addre
 
 ## Referências
 
-Tutorial em: https://www.luiztools.com.br/post/como-monitorar-eventos-da-blockchain-com-web3-js/
+Tutorial em: https://www.luiztools.com.br/post/como-monitorar-eventos-da-blockchain-com-reactjs-web3-js/
 
 Conheça meu curso de web3, blockchain e solidity: https://www.luiztools.com.br/curso-web23
 
