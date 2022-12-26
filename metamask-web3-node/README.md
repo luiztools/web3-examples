@@ -1,10 +1,10 @@
-# MetaMask Web3
+# MetaMask Web3 Node
 
 Simple examples of Node.js app connecting to blockchain using MetaMask and Infura.
 
 ## How to Run
 1. git clone the project
-2. cd metamask-web3
+2. cd metamask-web3-node
 3. npm install
 4. Create a .env file as .env.example with your configs (follow instructions in the examples)
 5. Edit the abi.json as your contract require
@@ -13,7 +13,7 @@ Simple examples of Node.js app connecting to blockchain using MetaMask and Infur
 
 ## Referências
 
-Tutorial em breve.
+Tutorial em https://www.luiztools.com.br/post/integracao-com-a-blockchain-com-node-js-e-web3-js/
 
 Conheça meu curso de web3, blockchain e solidity: https://www.luiztools.com.br/curso-web23
 

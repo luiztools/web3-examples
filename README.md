@@ -29,8 +29,11 @@ Example of login page using MetaMask as auth (EthersJS).
 ## MetaMask Transfer
 Example of crypto transfer from MetaMask wallet (EthersJS).
 
-## MetaMask Web3
-Example of blockchain calls & sends using MetaMask and web3.js
+## MetaMask Web3 Node
+Example of blockchain calls & sends using Node.js, MetaMask and Web3.js
+
+## MetaMask Web3 React
+Example of blockchain calls & sends using ReactJS, MetaMask and Web3.js
 
 ## Node.js Evento Web3
 Backend example with Node.js + Web3.js for event listening.
