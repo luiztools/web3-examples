@@ -14,7 +14,10 @@ BSC Scan website clone using BSC Scan APIs.
 ## CryptoBubbles Clone
 CryptoBubbles website clone using Binance streams.
 
-## Dapp Evento web3
+## Dapp Event Ethers
+Frontend example with ReactJS + EthersJS for event listening.
+
+## Dapp Event Web3
 Frontend example with ReactJS + Web3.js for event listening.
 
 ## Dapp React Ethers
@@ -35,7 +38,10 @@ Example of blockchain calls & sends using Node.js, MetaMask and Web3.js
 ## MetaMask Web3 React
 Example of blockchain calls & sends using ReactJS, MetaMask and Web3.js
 
-## Node.js Evento Web3
+## Node.js Event Ethers
+Backend example with Node.js + EthersJS for event listening.
+
+## Node.js Event Web3
 Backend example with Node.js + Web3.js for event listening.
 
 ## TradingView Clone
