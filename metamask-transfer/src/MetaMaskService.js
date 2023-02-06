@@ -21,7 +21,7 @@ async function getMetaMaskProvider() {
     if (!window.ethereum) throw new Error(`No MetaMask found!`);
     await window.ethereum.send('eth_requestAccounts');
 
-    const provider = new ethers.providers.Web3Provider(window.ethereum, "any");
+    const provider = new ethers.BrowserProvider(window.ethereum, "any");
     provider.on("network", (newNetwork, oldNetwork) => {
         if (oldNetwork) window.location.reload();
     });
@@ -32,18 +32,18 @@ export async function getBnbBalance(address) {
 
     const provider = await getMetaMaskProvider();
     const balance = await provider.getBalance(address);
-    return ethers.utils.formatEther(balance.toString());
+    return ethers.formatEther(balance.toString());
 }
 
 export async function transferBnb(toAddress, quantity) {
 
     const provider = await getMetaMaskProvider();
     const signer = provider.getSigner();
-    ethers.utils.getAddress(toAddress);//valida endereço
+    ethers.getAddress(toAddress);//valida endereço
 
     const tx = await signer.sendTransaction({
         to: toAddress,
-        value: ethers.utils.parseEther(quantity)
+        value: ethers.parseEther(quantity)
     })
 
     return tx;
@@ -55,7 +55,7 @@ export async function getTokenBalance(address, contractAddress, decimals = 18) {
     const contract = new ethers.Contract(contractAddress, CONTRACT_ABI, provider);
     const balance = await contract.balanceOf(address)
 
-    return ethers.utils.formatUnits(balance, decimals);
+    return ethers.formatUnits(balance, decimals);
 }
 
 export async function transferToken(toAddress, contractAddress, quantity, decimals = 18) {
@@ -66,9 +66,9 @@ export async function transferToken(toAddress, contractAddress, quantity, decima
     const contract = new ethers.Contract(contractAddress, CONTRACT_ABI, provider);
     const contractSigner = contract.connect(signer);
 
-    ethers.utils.getAddress(toAddress);//valida endereço
+    ethers.getAddress(toAddress);//valida endereço
 
-    const tx = await contractSigner.transfer(toAddress, ethers.utils.parseUnits(quantity, decimals));
+    const tx = await contractSigner.transfer(toAddress, ethers.parseUnits(quantity, decimals));
 
     return tx;
 }

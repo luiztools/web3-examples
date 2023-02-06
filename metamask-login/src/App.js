@@ -24,7 +24,7 @@ function App() {
 
     if (!window.ethereum) return setError(`No MetaMask found!`);
 
-    const provider = new ethers.providers.Web3Provider(window.ethereum);
+    const provider = new ethers.BrowserProvider(window.ethereum);
     const accounts = await provider.send("eth_requestAccounts", []);
     if (!accounts || !accounts.length) return setError('Wallet not found/allowed!');
 
@@ -61,9 +61,9 @@ function App() {
   }
 
   function getBalance() {
-    const provider = new ethers.providers.Web3Provider(window.ethereum);
+    const provider = new ethers.BrowserProvider(window.ethereum);
     provider.getBalance(wallet)
-      .then(balance => setBalance(ethers.utils.formatEther(balance.toString())))
+      .then(balance => setBalance(ethers.formatEther(balance.toString())))
       .catch(err => setError(err.message))
   }
 

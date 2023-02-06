@@ -15,7 +15,7 @@ function App() {
   async function getProvider() {
     if (!window.ethereum) throw new Error(`No MetaMask found!`);
 
-    const provider = new ethers.providers.Web3Provider(window.ethereum);
+    const provider = new ethers.BrowserProvider(window.ethereum);
 
     const accounts = await provider.send("eth_requestAccounts", []);
     if (!accounts || !accounts.length) throw new Error('Wallet not found/allowed!');

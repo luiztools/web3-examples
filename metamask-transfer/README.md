@@ -10,8 +10,10 @@ Simple MetaMask transfer examples.
 
 Leia o tutorial da MetaMask (inclui vídeo): https://www.luiztools.com.br/post/integracao-com-metamask-via-js/
 
-Conheça meu curso de bot para criptomoedas: https://www.luiztools.com.br/curso-beholder
+Conheça meu curso de web3/blockchain: https://www.luiztools.com.br/curso-web23
 
 Conheça meus livros: https://www.luiztools.com.br/meus-livros
 
 Me siga nas redes sociais: https://about.me/luiztools
+
+Receba novidades no Telegram: https://t.me/luiznews

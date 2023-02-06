@@ -4,12 +4,12 @@ import './App.css';
 function App() {
 
   async function doListen() {
-    const provider = new ethers.providers.WebSocketProvider(process.env.REACT_APP_WEBSOCKET_URL);
+    const provider = new ethers.WebSocketProvider(process.env.REACT_APP_WEBSOCKET_URL);
 
     const filter = {
       address: process.env.REACT_APP_CONTRACT_ADDRESS,
       topics: [
-        ethers.utils.id("Transfer(address,address,uint256)")
+        ethers.id("Transfer(address,address,uint256)")
       ]
     }
     provider.on(filter, () => {
