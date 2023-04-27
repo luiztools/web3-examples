@@ -44,5 +44,8 @@ Backend example with Node.js + EthersJS for event listening.
 ## Node.js Event Web3
 Backend example with Node.js + Web3.js for event listening.
 
+## Pinata IPFS Example
+A simple example written in Next.js to upload files to IPFS network using Pinata API.
+
 ## TradingView Clone
 TradingView candle chart clone using Binance API & Stream.
