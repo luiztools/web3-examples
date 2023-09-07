@@ -52,3 +52,6 @@ A simple example written in Next.js to upload files to IPFS network using Pinata
 
 ## TradingView Clone
 TradingView candle chart clone using Binance API & Stream.
+
+## Uniswap Graph API
+Application example that queries over Uniswap Graph API.
