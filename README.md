@@ -8,9 +8,6 @@ Example of Amazon Alexa skill for crypto prices.
 ## Blockchain
 Example of blockchain written in JavaScript (teaching purposes).
 
-## BSC Scan Clone
-BSC Scan website clone using BSC Scan APIs.
-
 ## CryptoBubbles Clone
 CryptoBubbles website clone using Binance streams.
 
@@ -49,9 +46,6 @@ Backend example with Node.js + Web3.js for event listening.
 
 ## Pinata IPFS Example
 A simple example written in Next.js to upload files to IPFS network using Pinata API.
-
-## TradingView Clone
-TradingView candle chart clone using Binance API & Stream.
 
 ## Uniswap Graph API
 Application example that queries over Uniswap Graph API.
