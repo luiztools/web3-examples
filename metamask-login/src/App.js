@@ -32,7 +32,7 @@ function App() {
 
     setWallet(accounts[0]);
 
-    const signer = provider.getSigner();
+    const signer = await provider.getSigner();
     const secret = await signer.signMessage(CHALLENGE);
 
     return { user: accounts[0], secret };
