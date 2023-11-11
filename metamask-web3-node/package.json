@@ -7,11 +7,10 @@
     "start": "node index"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "LuizTools",
+  "license": "MIT",
   "dependencies": {
-    "@truffle/hdwallet-provider": "^2.1.1",
     "dotenv": "^16.0.3",
-    "web3": "^1.8.1"
+    "web3": "^4.2.2"
   }
 }

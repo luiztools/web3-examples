@@ -1,15 +1,12 @@
 require('dotenv').config();
 const ABI = require("./abi.json");
 
-//next lines only if you want to interact with smart contracts (tutorial part 2)
-const HDWalletProvider = require("@truffle/hdwallet-provider");
-const localKeyProvider = new HDWalletProvider({
-    privateKeys: [process.env.PRIVATE_KEY],
-    providerOrUrl: process.env.INFURA_URL,
-});
-
 const Web3 = require('web3');
-const web3 = new Web3(localKeyProvider);//you can use just infura url here, if you won't interact with smart contracts
+const web3 = new Web3(process.env.INFURA_URL);
+
+//additional lines if you want to send transactions
+const account = web3.eth.accounts.privateKeyToAccount('0x' + process.env.PRIVATE_KEY);
+web3.eth.accounts.wallet.add(account);
 
 async function getPrcBalance(from) {
     const contract = new web3.eth.Contract(ABI, process.env.CONTRACT_ADDRESS);
