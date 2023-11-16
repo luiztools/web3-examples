@@ -7,10 +7,10 @@
     "start": "node index.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "LuizTools",
+  "license": "MIT",
   "dependencies": {
     "dotenv": "^16.0.3",
-    "web3": "^1.8.1"
+    "web3": "^4.2.2"
   }
 }
