@@ -44,8 +44,11 @@ Backend example with Node.js + EthersJS for event listening.
 ## Node.js Event Web3
 Backend example with Node.js + Web3.js for event listening.
 
+## PancakeSwap Graph API
+Application example that queries over PancakeSwap V3 Graph API.
+
 ## Pinata IPFS Example
 A simple example written in Next.js to upload files to IPFS network using Pinata API.
 
 ## Uniswap Graph API
-Application example that queries over Uniswap Graph API.
+Application example that queries over Uniswap V3 Graph API.

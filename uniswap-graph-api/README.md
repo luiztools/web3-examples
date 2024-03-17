@@ -1,5 +1,5 @@
 # Uniswap Graph API
-Application example that queries over Uniswap Graph API.
+Application example that queries over Uniswap V3 Graph API.
 
 ## How to Run
 
