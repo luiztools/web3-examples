@@ -28,7 +28,7 @@ function App() {
     const result = await getTransaction(transaction);
     setMessage(`
     Status: ${result.status}
-    Confirmations: ${result.confirmations}`);
+    Confirmations: ${await result.confirmations()}`);
   }
 
   async function transfer() {

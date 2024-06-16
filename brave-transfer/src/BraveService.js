@@ -42,14 +42,14 @@ export async function getTokenBalance(address, contractAddress, decimals = 18) {
 
 export async function transferToken(toAddress, contractAddress, quantity, decimals = 18) {
     const provider = await getBraveProvider();
-    const signer = provider.getSigner();
+    const signer = await provider.getSigner();
 
-    const contract = new ethers.Contract(contractAddress, CONTRACT_ABI, provider);
-    const contractSigner = contract.connect(signer);
+    const contract = new ethers.Contract(contractAddress, CONTRACT_ABI, signer);
 
     ethers.getAddress(toAddress);//valida endereço
 
-    const tx = await contractSigner.transfer(toAddress, ethers.parseUnits(quantity, decimals));
+    const tx = await contract.transfer(toAddress, ethers.parseUnits(quantity, decimals));
+    await tx.wait();
 
     return tx;
 }
