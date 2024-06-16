@@ -1,5 +1,5 @@
-# metamask-transfer
-Simple MetaMask transfer example.
+# brave-transfer
+Simple Brave Wallet balance and transfer example.
 
 ## Instruções
 
@@ -8,7 +8,7 @@ Simple MetaMask transfer example.
 
 ## Mais informações
 
-Leia o tutorial da MetaMask (inclui vídeo): https://www.luiztools.com.br/post/integracao-com-metamask-via-js/
+Leia o tutorial da Brave (inclui vídeo): https://www.luiztools.com.br/post/integracao-com-brave-wallet-via-ethersjs
 
 Conheça meu curso de web3/blockchain: https://www.luiztools.com.br/curso-web23
 

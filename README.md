@@ -8,6 +8,9 @@ Example of Amazon Alexa skill for crypto prices.
 ## Blockchain
 Example of blockchain written in JavaScript (teaching purposes).
 
+## Brave Transfer
+Example of crypto transfer from Brave Wallet (EthersJS).
+
 ## CryptoBubbles Clone
 CryptoBubbles website clone using Binance streams.
 
