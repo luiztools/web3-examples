@@ -26,14 +26,14 @@ Frontend example (built with ReactJS + EthersJS) for smart contracts.
 ## Dapp React Web3
 Frontend example (built with ReactJS + web3.js) for smart contracts.
 
+## MetaMask Ethers Node
+Example of blockchain calls & sends using Node.js, MetaMask and EthersJS
+
 ## MetaMask Login
 Example of login page using MetaMask as auth (EthersJS).
 
 ## MetaMask Transfer
 Example of crypto transfer from MetaMask wallet (EthersJS).
-
-## MetaMask Ethers Node
-Example of blockchain calls & sends using Node.js, MetaMask and EthersJS
 
 ## MetaMask Web3 Node
 Example of blockchain calls & sends using Node.js, MetaMask and Web3.js
@@ -55,3 +55,6 @@ A simple example written in Next.js to upload files to IPFS network using Pinata
 
 ## Uniswap Graph API
 Application example that queries over Uniswap V3 Graph API.
+
+## Wallet Ethers
+Wallet example written in Node.js (console) with EthersJS.
