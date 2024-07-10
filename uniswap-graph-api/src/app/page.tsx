@@ -9,7 +9,7 @@ export default function Home() {
   const [data, setData] = useState<string>("");
 
   async function btnEnviarClick() {
-    const { data } = await axios.post("https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v3", { query });
+    const { data } = await axios.post("https://gateway-arbitrum.network.thegraph.com/api/{api-key}/subgraphs/id/5zvR82QoaXYFyDEKLZ9t6v9adgnptxYpKpSbxtgVENFV", { query });
     setData(data.data);
   }
 
