@@ -1,5 +1,5 @@
 # Wallet BTC JS
-A simple BTC wallet generator in JS.
+A simple BTC console application in JS.
 
 ## How to Run
 

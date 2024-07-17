@@ -56,5 +56,8 @@ A simple example written in Next.js to upload files to IPFS network using Pinata
 ## Uniswap Graph API
 Application example that queries over Uniswap V3 Graph API.
 
+## Wallet BTC JS
+Wallet example written in Node.js (console) with BitcoinJS.
+
 ## Wallet Ethers
 Wallet example written in Node.js (console) with EthersJS.
