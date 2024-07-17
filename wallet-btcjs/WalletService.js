@@ -33,6 +33,38 @@ function createWallet() {
     return myWallet;
 }
 
+function recoverFromMnemonic(mnemonic) {
+    const seed = bip39.mnemonicToSeedSync(mnemonic);
+    return bip32.fromSeed(seed, NETWORK);
+}
+
+function recoverFromPrivateKey(privateKey) {
+    let ONES = Buffer.alloc(32, 1)
+    return bip32.fromPrivateKey(Buffer.from(privateKey, 'hex'), ONES, NETWORK);
+}
+
+function recoverWallet(pkOrMnemonic) {
+    const root = pkOrMnemonic.indexOf(" ") !== -1
+        ? recoverFromMnemonic(pkOrMnemonic)
+        : recoverFromPrivateKey(pkOrMnemonic);
+
+    let account = root.derivePath(PATH);
+    let node = account.derive(0).derive(0);
+
+    let address = bitcoin.payments.p2pkh({
+        pubkey: node.publicKey,
+        network: NETWORK
+    }).address;
+
+    myWallet = {
+        address,
+        privateKey: node.toWIF()
+    }
+
+    return myWallet;
+}
+
 module.exports = {
-    createWallet
+    createWallet,
+    recoverWallet
 }
