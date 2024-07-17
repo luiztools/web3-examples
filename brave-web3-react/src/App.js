@@ -1,51 +1,54 @@
 import { useState } from 'react';
-import Web3 from 'web3';
+import { getBnbBalance, transferBnb, getTokenBalance, transferToken } from "./BraveService";
 
 function App() {
 
-  const [myAddress, setMyAddress] = useState("");
+  const [address, setAddress] = useState("0x7C3aEBdD11A2a86270db7a43CA9762f78bED9E0C");
+  const [contract, setContract] = useState("BNB");
   const [balance, setBalance] = useState('');
-  const [message, setMessage] = useState('');
+
   const [toAddress, setToAddress] = useState("");
   const [quantity, setQuantity] = useState("");
+  const [message, setMessage] = useState('');
 
-  async function connect() {
-    if (!window.ethereum)
-      return setMessage('No Brave Wallet');
+  async function checkBalance() {
+    let balance;
 
-    setMessage(`Trying to connect and load balance...`);
-    const web3 = new Web3(window.ethereum);
+    if (contract === "BNB")
+      balance = await getBnbBalance(address);
+    else
+      balance = await getTokenBalance(address, contract);
 
-    const accounts = await web3.eth.requestAccounts();
-
-    if (!accounts || !accounts.length) throw new Error('Wallet not found/allowed!');
-
-    setMyAddress(accounts[0]);
-    const balance = await web3.eth.getBalance(accounts[0]);
-    setBalance(web3.utils.fromWei(balance, "ether"));
+    setBalance(balance);
     setMessage(``);
   }
 
   async function transfer() {
-    setMessage(`Trying to transfer ${quantity} to ${toAddress}...`);
+    let result;
+    if (contract === "BNB")
+      result = await transferBnb(toAddress, quantity);
+    else
+      result = await transferToken(toAddress, contract, quantity);
 
-    const web3 = new Web3(window.ethereum);
-    const value = web3.utils.toWei(quantity, "ether");
-
-    const nonce = await web3.eth.getTransactionCount(myAddress, 'latest'); 
-    const transaction = { from: myAddress, to: toAddress, value, gas: 21000, nonce }; 
-    const tx = await web3.eth.sendTransaction(transaction); 
-    setMessage(JSON.stringify(tx));
+    setMessage(result.transactionHash);
   }
 
   return (
     <div>
       <p>
-        My Address : <input type="text" value={myAddress} onChange={evt => setMyAddress(evt.target.value)} />
-        <input type="button" value="Connect" onClick={evt => connect()} />
+        My Address : <input type="text" value={address} onChange={evt => setAddress(evt.target.value)} />
       </p>
       <p>
-        Balance (BNB): {balance}
+        <select className="form-select" onChange={evt => setContract(evt.target.value)}>
+          <option value="BNB">BNB</option>
+          <option value="0x53598858bC64f5f798B3AcB7F82FF2CB2aF463bf">BTC</option>
+          <option value="0xd66c6B4F0be8CE5b39D52E0Fd1344c389929B378">ETH</option>
+          <option value="0x64544969ed7EBf5f083679233325356EbE738930">USDC</option>
+        </select>
+        <input type="button" value="See Balance" onClick={evt => checkBalance()} />
+      </p>
+      <p>
+        Balance: {balance}
       </p>
       <hr />
       <p>
