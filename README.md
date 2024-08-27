@@ -53,6 +53,9 @@ Application example that queries over PancakeSwap V3 Graph API.
 ## Pinata IPFS Example
 A simple example written in Next.js to upload files to IPFS network using Pinata API.
 
+## SushiSwap Graph API
+Application example that queries over SushiSwap V3 Graph API.
+
 ## Uniswap Graph API
 Application example that queries over Uniswap V3 Graph API.
 
