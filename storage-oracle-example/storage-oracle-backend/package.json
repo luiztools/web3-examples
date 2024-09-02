@@ -1,0 +1,17 @@
+{
+  "name": "storage-oracle-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm start"
+  },
+  "keywords": [],
+  "author": "LuizTools",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.2",
+    "express": "^4.19.2"
+  }
+}

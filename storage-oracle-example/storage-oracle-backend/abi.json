@@ -1,0 +1,108 @@
+[
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "gameId",
+				"type": "string"
+			}
+		],
+		"name": "getGame",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "team1",
+						"type": "string"
+					},
+					{
+						"internalType": "uint8",
+						"name": "score1",
+						"type": "uint8"
+					},
+					{
+						"internalType": "string",
+						"name": "team2",
+						"type": "string"
+					},
+					{
+						"internalType": "uint8",
+						"name": "score2",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "winner",
+						"type": "uint8"
+					}
+				],
+				"internalType": "struct Game",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "gameId",
+				"type": "string"
+			},
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "team1",
+						"type": "string"
+					},
+					{
+						"internalType": "uint8",
+						"name": "score1",
+						"type": "uint8"
+					},
+					{
+						"internalType": "string",
+						"name": "team2",
+						"type": "string"
+					},
+					{
+						"internalType": "uint8",
+						"name": "score2",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "winner",
+						"type": "uint8"
+					}
+				],
+				"internalType": "struct Game",
+				"name": "newGame",
+				"type": "tuple"
+			}
+		],
+		"name": "setGame",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+]
