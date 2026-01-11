@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { getEthBalance } from './MetaMaskService';
+import { getEthBalance } from './Web3Service';
 
 function App() {
 

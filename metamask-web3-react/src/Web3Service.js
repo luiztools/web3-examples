@@ -13,7 +13,7 @@ async function getMetaMaskProvider() {
 export async function getEthBalance(address) {
     const web3 = await getMetaMaskProvider();
     const balance = await web3.eth.getBalance(address); 
-    return web3.utils.fromWei(balance);
+    return web3.utils.fromWei(balance, "ether");
 }
 
 export async function transferEth(myAddress, toAddress, quantity) {
