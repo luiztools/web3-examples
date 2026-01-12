@@ -7,7 +7,7 @@ Smart Contract address (ERC-20 example token): https://testnet.bscscan.com/addre
 ## How to Run
 1. git clone
 2. npm install
-3. npm start
+3. npm run dev
 
 ## Referências
 
