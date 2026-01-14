@@ -15,7 +15,7 @@ Simple example of Node.js app connecting to blockchain using MetaMask and Viem.
 
 Tutoriais em 
 - blockchain (parte 1): https://www.luiztools.com.br/post/integracao-com-a-blockchain-com-node-js-e-viem/
-- smart contract (parte 2): soon
+- smart contract (parte 2): https://www.luiztools.com.br/post/integracao-com-smart-contracts-com-node-js-e-viem/
 
 Conheça meu curso de web3, blockchain e solidity: https://www.luiztools.com.br/curso-web23
 
