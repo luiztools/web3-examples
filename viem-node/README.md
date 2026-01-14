@@ -1,10 +1,10 @@
-# MetaMask Ethers Node
+# Viem Node
 
-Simple examples of Node.js app connecting to blockchain using MetaMask and Infura.
+Simple example of Node.js app connecting to blockchain using MetaMask and Viem.
 
 ## How to Run
 1. git clone the project
-2. cd metamask-ethers-node
+2. cd viem-node
 3. npm install
 4. Create a .env file as .env.example with your configs (follow instructions in the examples)
 5. Edit the abi.json as your contract require
@@ -14,8 +14,8 @@ Simple examples of Node.js app connecting to blockchain using MetaMask and Infur
 ## Referências
 
 Tutoriais em 
-- blockchain (parte 1): https://www.luiztools.com.br/post/integracao-com-a-blockchain-com-node-js-e-ethersjs/
-- smart contract (parte 2): https://www.luiztools.com.br/post/integracao-com-smart-contracts-com-node-js-e-ethersjs
+- blockchain (parte 1): https://www.luiztools.com.br/post/integracao-com-a-blockchain-com-node-js-e-viem/
+- smart contract (parte 2): soon
 
 Conheça meu curso de web3, blockchain e solidity: https://www.luiztools.com.br/curso-web23
 

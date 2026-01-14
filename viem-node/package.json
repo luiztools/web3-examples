@@ -1,0 +1,22 @@
+{
+  "name": "viem-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --loader ts-node/esm src/index.ts"
+  },
+  "keywords": [],
+  "author": "LuizTools",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "viem": "^2.44.2"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.8",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
