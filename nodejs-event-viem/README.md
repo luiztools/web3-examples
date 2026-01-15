@@ -1,19 +1,18 @@
-# nodejs-event-ethers
+# nodejs-event-viem
 
-A simple web backend written with JS/Node to listen events in the blockchain using EthersJS.
+A simple web backend written with TS/Node to listen events in the blockchain using Viem.
 
 Smart Contract address (ERC-20 example token): https://testnet.bscscan.com/address/0x94a9838528E1b0022c334D3c1c7D5e684c222B07
 
 ## How to Run
 1. git clone
 2. npm install
-3. copy .env.example as .env
-4. fill .env variables
-5. npm start
+3. adjust the code with your addresses
+4. npm start
 
 ## Referências
 
-Tutorial em: https://www.luiztools.com.br/post/como-monitorar-eventos-da-blockchain-com-nodejs-ethersjs/
+Tutorial em: https://www.luiztools.com.br/post/como-monitorar-eventos-da-blockchain-com-node-js-e-viem/
 
 Conheça meu curso de web3, blockchain e solidity: https://www.luiztools.com.br/curso-web23
 

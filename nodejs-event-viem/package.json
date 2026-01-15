@@ -1,0 +1,21 @@
+{
+  "name": "nodejs-event-viem",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --loader ts-node/esm src/index.ts"
+  },
+  "keywords": [],
+  "author": "LuizTools",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^25.0.8",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "viem": "^2.44.2"
+  }
+}
