@@ -1,5 +1,4 @@
 import { ethers } from 'ethers';
-
 import CONTRACT_ABI from "./ABI.json";
 
 async function getMetaMaskProvider() {
@@ -12,13 +11,13 @@ async function getMetaMaskProvider() {
     return provider;
 }
 
-export async function getBnbBalance(address) {
+export async function getPolBalance(address) {
     const provider = await getMetaMaskProvider();
     const balance = await provider.getBalance(address);
     return ethers.formatEther(balance.toString());
 }
 
-export async function transferBnb(toAddress, quantity) {
+export async function transferPol(toAddress, quantity) {
     const provider = await getMetaMaskProvider();
     const signer = await provider.getSigner();
     ethers.getAddress(toAddress);//valida endereço
@@ -29,33 +28,21 @@ export async function transferBnb(toAddress, quantity) {
     })
     await tx.wait();
 
-    return tx;
+    return tx.hash;
 }
 
 export async function getTokenBalance(address, contractAddress, decimals = 18) {
     const provider = await getMetaMaskProvider();
     const contract = new ethers.Contract(contractAddress, CONTRACT_ABI, provider);
-    const balance = await contract.balanceOf(address);
-
+    const balance = await contract.balanceOf(address)
     return ethers.formatUnits(balance, decimals);
 }
 
 export async function transferToken(toAddress, contractAddress, quantity, decimals = 18) {
     const provider = await getMetaMaskProvider();
     const signer = await provider.getSigner();
-
     const contract = new ethers.Contract(contractAddress, CONTRACT_ABI, signer);
-
-    ethers.getAddress(toAddress);//valida endereço
-
     const tx = await contract.transfer(toAddress, ethers.parseUnits(quantity, decimals));
     await tx.wait();
-
-    return tx;
-}
-
-export async function getTransaction(hash){
-    const provider = await getMetaMaskProvider();
-    const tx = await provider.getTransactionReceipt(hash);
-    return tx;
+    return tx.hash;
 }

@@ -1,4 +1,4 @@
-# metamask-transfer
+# metamask-ethers-transfer
 Simple MetaMask transfer example.
 
 ## Instruções
