@@ -1,13 +1,12 @@
 import { ethers } from 'ethers';
-import './App.css';
 
 function App() {
 
   async function doListen() {
-    const provider = new ethers.WebSocketProvider(process.env.REACT_APP_WEBSOCKET_URL);
+    const provider = new ethers.WebSocketProvider(import.meta.env.VITE_WEBSOCKET_URL);
 
     const filter = {
-      address: process.env.REACT_APP_CONTRACT_ADDRESS,
+      address: import.meta.env.VITE_CONTRACT_ADDRESS,
       topics: [
         ethers.id("Transfer(address,address,uint256)")
       ]
@@ -24,12 +23,10 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <button type='button' onClick={btnClick}>Listen Event</button>
-      </header>
+    <div>
+      <button type='button' onClick={btnClick}>Listen Event</button>
     </div>
   );
 }
 
-export default App;
+export default App
